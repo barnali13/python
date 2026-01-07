@@ -252,3 +252,24 @@
 # else:
 #     print("Cab booked for 200 rupees.")
 
+# #29 Loan eligibility:   Salary  Credit score
+# salary = float(input("Enter salary: "))
+# credit_score = int(input("Enter credit score: "))
+# if salary >= 50000 and credit_score >= 700:
+#     print("Loan approved.")
+# else:
+#     print("Loan not approved.")
+
+#30.College admission:  Entrance score  Category
+entrance_score = int(input("Enter entrance score: "))
+category = input("Enter category (general/obc/sc/st): ")
+if entrance_score >= 80 and category == "general":
+    print("Admitted.")
+elif entrance_score >= 70 and category == "obc":
+    print("Admitted.")
+elif entrance_score >= 60 and category == "sc":
+    print("Admitted.")
+elif entrance_score >= 50 and category == "st":
+    print("Admitted.")
+else:
+    print("Not admitted.")
