@@ -260,3 +260,74 @@
 # task_status = {t["task"]: t["status"] for t in task}
 # print("task_status:", task_status)
 
+# #Take input status ("pending", "in-progress", "completed").
+# # Using match-case, print:
+# # pending → “Task not started”
+# # in-progress → “Task is currently being worked on”
+# # completed → “Task completed successfully”
+# # default → “Invalid task status”
+
+# status = input("Enter task status: ")
+# match status :
+#     case "pending":
+#         print("Task not started")
+#     case "in-progress":
+#         print("Task is currently being worked on")
+#     case "completed":
+#         print("Task completed successfully")
+#     case _:
+#         print("Invalid task status")
+
+# # Given:
+# # tasks = [
+# #     ("Design UI", "Design"),
+# #     ("Fix server issue", "IT"),
+# #     ("Prepare salary report", "Management"),
+# #     ("Database backup", "IT")
+# # ]
+# # Using a for loop:
+# # Skip tasks not belonging to "IT" using continue
+# # Print only IT department task names
+
+# tasks = [
+#     ("Design UI", "Design"),
+#    ("Fix server issue", "IT"),
+#     ("Prepare salary report", "Management"),
+#     ("Database backup", "IT")]
+
+# for tasks_name,deparment in tasks:
+#     if deparment != 'IT':
+#         continue
+#     print(tasks_name, ":", deparment)
+
+# #Question:
+# Using a while loop:
+# Allow maximum 3 login attempts
+# If correct pas is entered, print "Login successful" and break
+# If attempts are over, print "Account locked"
+# pa = "admin123"
+# attempts = 3 
+# while attempts > 0:
+#     k = input("Enter password: ")
+#     if k == pa:
+#         print("Login successful")
+#         break
+#     else:
+#         attempts = attempts - 1
+#         print("Incorrect password. Try again.")
+# if attempts == 0:
+#     print("Account locked")
+
+# # Create a function:
+# # def notify_employee(task_status):
+# # If status is "completed", print "Notification sent"
+# # If status is "pending", use pass (feature to be added late
+# task_status = input("Enter task status: ")
+# def notify_employee(task_status):
+#     if task_status == "completed":
+#         print("Notification sent")
+#     elif task_status == "pending":
+#         pass   # feature to be added later
+# # calling the function
+# notify_employee("completed")
+# notify_employee("pending")
