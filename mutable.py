@@ -19,6 +19,6 @@
 # new_dict["age"] = 37
 # print(new_dict)
 
-x = 10
-x = x +5 
-print(x)
+# x = 10
+# x = x +5 
+# print(x)
