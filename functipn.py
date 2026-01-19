@@ -37,3 +37,35 @@
 #     print(f"Name: {name}, Age: {age}, Department: {department}")
 
 # employee("Alice", 30, "HR")
+
+# def show_numbers(*args):
+#     print(args)
+
+# show_numbers(10, 20, 30,40,50,60,70)
+
+# def add(*numbers):
+#     total = 0
+#     for n in numbers:
+#         total += n
+#     print(total)
+# add(10,20,30,40,50,60,70)
+
+# # Kwargs 
+# def employee_details(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+
+# employee_details(name ='Barnali', dept='IT',role =' Developer')
+
+# def assign_task(employee,*tasks,**details):
+#     print(f"Employee: {employee}")
+#     for task in tasks:
+#         print(f"Task: {task}")
+#     for key, value in details.items():
+#         print(f"{key}: {value}")
+
+# assign_task(
+#         'Barnali',
+#         'Fix bug',
+#         priority='high',
+#         status='in progress'    )
